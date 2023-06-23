@@ -87,6 +87,7 @@ public class DanhSachCachDung extends javax.swing.JFrame {
         Table = new javax.swing.JTable();
         THEM = new javax.swing.JButton();
         XOA = new javax.swing.JButton();
+        THEM1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -122,7 +123,6 @@ public class DanhSachCachDung extends javax.swing.JFrame {
         jScrollPane1.setViewportView(Table);
 
         THEM.setBackground(new java.awt.Color(255, 204, 204));
-        THEM.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         THEM.setForeground(new java.awt.Color(0, 99, 28));
         THEM.setText("Thêm");
         THEM.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -138,13 +138,27 @@ public class DanhSachCachDung extends javax.swing.JFrame {
         });
 
         XOA.setBackground(new java.awt.Color(255, 204, 204));
-        XOA.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         XOA.setForeground(new java.awt.Color(0, 99, 28));
         XOA.setText("Xóa");
         XOA.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         XOA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 XOAMouseClicked(evt);
+            }
+        });
+
+        THEM1.setBackground(new java.awt.Color(255, 204, 204));
+        THEM1.setForeground(new java.awt.Color(0, 99, 28));
+        THEM1.setText("Quay lại");
+        THEM1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        THEM1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                THEM1MouseClicked(evt);
+            }
+        });
+        THEM1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                THEM1ActionPerformed(evt);
             }
         });
 
@@ -155,13 +169,17 @@ public class DanhSachCachDung extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
+                        .addGap(111, 111, 111))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(THEM, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(XOA, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(XOA, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(THEM1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(177, 177, 177)
                 .addComponent(Tentrang2)
@@ -177,6 +195,7 @@ public class DanhSachCachDung extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(THEM, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(THEM1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(XOA, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -247,6 +266,16 @@ public class DanhSachCachDung extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_THEMActionPerformed
 
+    private void THEM1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_THEM1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_THEM1MouseClicked
+
+    private void THEM1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_THEM1ActionPerformed
+        MedicineUsageManagement frame = new MedicineUsageManagement(CMND);
+        this.dispose();
+        frame.setVisible(true);
+    }//GEN-LAST:event_THEM1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -284,6 +313,7 @@ public class DanhSachCachDung extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton THEM;
+    private javax.swing.JButton THEM1;
     private javax.swing.JTable Table;
     private javax.swing.JLabel Tentrang2;
     private javax.swing.JButton XOA;

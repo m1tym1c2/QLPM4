@@ -98,6 +98,7 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
         Table = new javax.swing.JTable();
         them = new javax.swing.JButton();
         Xoa = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -133,7 +134,6 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
         jScrollPane1.setViewportView(Table);
 
         them.setBackground(new java.awt.Color(255, 204, 204));
-        them.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         them.setForeground(new java.awt.Color(0, 99, 28));
         them.setText("Thêm");
         them.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -144,13 +144,29 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
         });
 
         Xoa.setBackground(new java.awt.Color(255, 204, 204));
-        Xoa.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         Xoa.setForeground(new java.awt.Color(0, 99, 28));
         Xoa.setText("Xóa");
         Xoa.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         Xoa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 XoaMouseClicked(evt);
+            }
+        });
+        Xoa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                XoaActionPerformed(evt);
+            }
+        });
+
+        jButton1.setBackground(new java.awt.Color(255, 204, 204));
+        jButton1.setForeground(new java.awt.Color(0, 99, 28));
+        jButton1.setText("Quay lại");
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton1.setMaximumSize(new java.awt.Dimension(23, 18));
+        jButton1.setMinimumSize(new java.awt.Dimension(23, 18));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -162,7 +178,7 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 607, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(125, 125, 125)
                         .addComponent(Tentrang2)
@@ -171,7 +187,10 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(them, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(Xoa, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Xoa, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -184,7 +203,8 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(them, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Xoa, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Xoa, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -239,6 +259,16 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_XoaMouseClicked
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+            MedicineUsageManagement frame = new MedicineUsageManagement(CMND);
+        this.dispose();
+        frame.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void XoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XoaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_XoaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -278,6 +308,7 @@ public class DanhSachDonViTinh extends javax.swing.JFrame {
     private javax.swing.JTable Table;
     private javax.swing.JLabel Tentrang2;
     private javax.swing.JButton Xoa;
+    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton them;
     // End of variables declaration//GEN-END:variables
