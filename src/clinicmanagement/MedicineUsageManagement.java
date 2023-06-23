@@ -249,7 +249,7 @@ public class MedicineUsageManagement extends javax.swing.JFrame {
         Anhdaidien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/image 6.png"))); // NOI18N
         jPanel2.add(Anhdaidien, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 12, -1, -1));
 
-        Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(0, 84, 42));
         Tentaikhoan.setText("Lê Phi Long\n");
         jPanel2.add(Tentaikhoan, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, -1, -1));
