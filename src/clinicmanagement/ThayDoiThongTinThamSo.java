@@ -112,20 +112,58 @@ public class ThayDoiThongTinThamSo extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /*
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         try {
+            int tienKhamValue = Integer.parseInt(TienKham.getText());
+            if (tienKhamValue < 0){
+                JOptionPane.showMessageDialog(this, "Giá trị của Tiền khám không hợp lệ!");}
+            else{
             DatabaseConnection DTBC = new DatabaseConnection();
             Connection conn = DTBC.getConnection(this);
             Statement stm = conn.createStatement();
             stm.executeUpdate("UPDATE THAMSO SET GiaTri = " + SoBenhNhanToiDa.getText() + " WHERE TenThamSo = 'SoBenhNhanToiDa'");
             stm.executeUpdate("UPDATE THAMSO SET GiaTri = " + TienKham.getText() + " WHERE TenThamSo = 'TienKham'");
-            JOptionPane.showMessageDialog(this, "Đã thay đổi thông tin thành công !!!");
-        } catch (Exception e) {
-
-        }
+            JOptionPane.showMessageDialog(this, "Đã thay đổi thông tin thành công !!!");}
+        } 
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Giá trị của Tiền khám không hợp lệ!");} 
+        catch (Exception e) {
+            // Xử lý exception (nếu có)
+           }
         this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
     }//GEN-LAST:event_jButton4ActionPerformed
+    */
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    try {
+        int tienKhamNew = Integer.parseInt(TienKham.getText());
+        int soBenhNhanToiDaNew = Integer.parseInt(SoBenhNhanToiDa.getText());
+        if (soBenhNhanToiDaNew < 0)
+        {
+            JOptionPane.showMessageDialog(this, "Giá trị của số bệnh nhân không hợp lệ!");
+            SoBenhNhanToiDa.requestFocus();
+        }
+        else
+        if (tienKhamNew < 0) 
+        {
+            JOptionPane.showMessageDialog(this, "Giá trị của tiền khám không hợp lệ!");
+            TienKham.requestFocus();
+        } else {
+            DatabaseConnection DTBC = new DatabaseConnection();
+            Connection conn = DTBC.getConnection(this);
+            Statement stm = conn.createStatement();
+            stm.executeUpdate("UPDATE THAMSO SET GiaTri = " + soBenhNhanToiDaNew + " WHERE TenThamSo = 'SoBenhNhanToiDa'");
+            stm.executeUpdate("UPDATE THAMSO SET GiaTri = " + tienKhamNew + " WHERE TenThamSo = 'TienKham'");
+            JOptionPane.showMessageDialog(this, "Đã thay đổi thông tin thành công !!!");
+            this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING)); // Đóng cửa sổ dialog
+        }
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(this, "Giá trị của Tiền khám không hợp lệ!");
+        TienKham.requestFocus(); // Đặt trỏ chuột vào ô nhập giá trị Tiền khám
+    } catch (Exception e) {
+        // Xử lý exception (nếu có)
+    }
+}
 
     /**
      * @param args the command line arguments
