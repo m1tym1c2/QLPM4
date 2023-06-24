@@ -42,7 +42,7 @@ import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
+import java.util.Calendar;
 /**
  *
  * @author Dell
@@ -132,7 +132,17 @@ public class LuongNhanVien extends javax.swing.JFrame {
             }
         }
     }
+    private String[] getYearList() {
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+        int startYear = 2000;
+        int numberOfYears = currentYear - startYear + 1;
+        String[] yearList = new String[numberOfYears];
 
+        for (int i = 0; i < numberOfYears; i++) {
+            yearList[i] = Integer.toString(startYear + i);
+        }
+        return yearList;
+    }
     private void InitData() {
         DefaultTableModel dtm = (DefaultTableModel) table.getModel();
         dtm.setRowCount(0);
@@ -390,7 +400,18 @@ public class LuongNhanVien extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(552, 164, 60, 25));
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2022" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040", "2041", "2042", "2043", "2044", "2045", "2046", "2047", "2048", "2049", "2050", "2051", "2052", "2053", "2054", "2055", "2056", "2057", "2058", "2059", "2060" }));
+        jComboBox2.setSelectedIndex(23);
+        jComboBox2.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                jComboBox2ComponentAdded(evt);
+            }
+        });
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 171, -1));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -605,6 +626,14 @@ public class LuongNhanVien extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_inMouseClicked
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jComboBox2ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_jComboBox2ComponentAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ComponentAdded
 
     /**
      * @param args the command line arguments
