@@ -176,6 +176,7 @@ public class AddStaff extends javax.swing.JDialog {
         jLabel11 = new javax.swing.JLabel();
         HeSo = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Them moi nhan vien");
@@ -263,7 +264,7 @@ public class AddStaff extends javax.swing.JDialog {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 150, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 450, 150, 40));
 
         FNgaySinh.setDateFormatString("dd-MM-yyyy");
         FNgaySinh.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -317,6 +318,18 @@ public class AddStaff extends javax.swing.JDialog {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 280, 30, -1));
+
+        jButton3.setBackground(new java.awt.Color(255, 204, 204));
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 99, 28));
+        jButton3.setText("Quay lại");
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 450, 150, 40));
 
         pack();
         setLocationRelativeTo(null);
@@ -451,6 +464,12 @@ public class AddStaff extends javax.swing.JDialog {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        EmployeeManager frame = new EmployeeManager(CMND);
+         frame.setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -502,6 +521,7 @@ public class AddStaff extends javax.swing.JDialog {
     private javax.swing.JLabel MaNV;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
