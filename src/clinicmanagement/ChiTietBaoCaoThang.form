@@ -306,7 +306,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="2a" green="54" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="L&#xea; Phi Long&#xa;"/>
+                <Property name="text" type="java.lang.String" value="Minh Qu&#xe2;n"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Anhdaidien">

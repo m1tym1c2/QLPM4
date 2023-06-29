@@ -354,7 +354,7 @@ public class ChiTietBaoCaoThang extends javax.swing.JFrame {
 
         Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(0, 84, 42));
-        Tentaikhoan.setText("Lê Phi Long\n");
+        Tentaikhoan.setText("Minh Quân");
 
         Anhdaidien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/image 6.png"))); // NOI18N
 

@@ -2,6 +2,37 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/DanhSachKhamBenh.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/PatientLookup.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/Home.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/AddMedicine.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/CreatePieChart.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ChangePassword.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ForgotPassword.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/AddStaff.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/UserInformation.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/HeaderRenderer.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ManagementDrugUse.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/BillList.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/BaoCaoDoanhThuThang.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/AddNewMedicine.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/DanhSachLoaiBenh.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/DanhSachDonViTinh.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ThayDoiThongTinThamSo.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ThemBenhNhan.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/MedicineUsageManagement.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/EmployeeManager.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/LuongNhanVien.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ReportMedicineUsage.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ThemCD.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/KeThuoc.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/DanhSachChucVu.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/StaffInformation.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/DatabaseConnection.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/PhieuKhamBenh.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/DanhSachCachDung.java</file>
+            <file>file:/D:/Nhom28/QLPM4/ClinicManagementJava/src/clinicmanagement/ThemDV.java</file>
+        </group>
     </open-files>
 </project-private>

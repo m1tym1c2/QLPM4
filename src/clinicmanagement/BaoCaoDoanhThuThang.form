@@ -339,7 +339,7 @@
                       <Component id="Tentaikhoan" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="Nutmuiten" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <EmptySpace pref="45" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -409,7 +409,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="2a" green="54" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="L&#xea; Phi Long&#xa;"/>
+                <Property name="text" type="java.lang.String" value="Minh Qu&#xe2;n"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Anhdaidien">

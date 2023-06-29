@@ -177,11 +177,11 @@ public class ChiTietHoaDon extends javax.swing.JDialog {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 81, 122, -1));
 
         name.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        name.setText("Nguyễn Đình Đức Thịnh");
+        name.setText("Nguyễn Huỳnh Minh Triết");
         jPanel1.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 81, -1, -1));
 
         date.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        date.setText("25/4/2022");
+        date.setText("25/4/2023");
         jPanel1.add(date, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 121, 192, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -199,7 +199,7 @@ public class ChiTietHoaDon extends javax.swing.JDialog {
         jPanel1.add(TrieuChung, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 161, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Cảm sốt");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 202, 192, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -250,11 +250,11 @@ public class ChiTietHoaDon extends javax.swing.JDialog {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 538, -1, 30));
 
         NguoiLap.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        NguoiLap.setText("Lê Phi Long");
+        NguoiLap.setText("Nguyễn Minh Thư");
         jPanel1.add(NguoiLap, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 542, 380, -1));
 
         tongTien.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        tongTien.setText("206,000");
+        tongTien.setText("30,000");
         jPanel1.add(tongTien, new org.netbeans.lib.awtextra.AbsoluteConstraints(217, 592, 379, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N

@@ -263,8 +263,13 @@ public class StaffInformation extends javax.swing.JDialog {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, -1, -1));
 
         FTen.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        FTen.setText("Trần Ngọc Tiến");
+        FTen.setText("Nguyễn Minh Thư");
         FTen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        FTen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FTenActionPerformed(evt);
+            }
+        });
         getContentPane().add(FTen, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, 226, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -309,8 +314,13 @@ public class StaffInformation extends javax.swing.JDialog {
 
         FCMND.setEditable(false);
         FCMND.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        FCMND.setText("1234567");
+        FCMND.setText("086769810");
         FCMND.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        FCMND.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FCMNDActionPerformed(evt);
+            }
+        });
         getContentPane().add(FCMND, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 226, -1));
 
         FEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -604,6 +614,14 @@ public class StaffInformation extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
          this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void FTenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FTenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FTenActionPerformed
+
+    private void FCMNDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FCMNDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FCMNDActionPerformed
 
     /**
      * @param args the command line arguments

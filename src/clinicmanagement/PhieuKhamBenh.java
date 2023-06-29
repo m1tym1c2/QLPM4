@@ -394,7 +394,7 @@ public class PhieuKhamBenh extends javax.swing.JFrame {
 
         Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(0, 84, 42));
-        Tentaikhoan.setText("Lê Phi Long\n");
+        Tentaikhoan.setText("Minh Quân");
 
         Anhdaidien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/image 6.png"))); // NOI18N
 
@@ -448,7 +448,7 @@ public class PhieuKhamBenh extends javax.swing.JFrame {
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(603, 231, 183, -1));
 
         textTenBenhNhan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        textTenBenhNhan.setText("Nguyễn Đình Đức Thịnh");
+        textTenBenhNhan.setText("Nguyễn Huỳnh Minh Triết");
         jPanel1.add(textTenBenhNhan, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 188, 274, -1));
 
         NguoiKham.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

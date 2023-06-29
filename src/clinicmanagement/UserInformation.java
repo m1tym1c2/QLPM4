@@ -130,6 +130,8 @@ public class UserInformation extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -149,6 +151,28 @@ public class UserInformation extends javax.swing.JDialog {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -166,7 +190,7 @@ public class UserInformation extends javax.swing.JDialog {
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 94, 105));
-        jLabel3.setText("Lê Phi Long");
+        jLabel3.setText("N.H.M.Triet");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 19, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -186,7 +210,7 @@ public class UserInformation extends javax.swing.JDialog {
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 94, 105));
-        jLabel7.setText("20/11/2002");
+        jLabel7.setText("11/02/2003");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(308, 75, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -206,7 +230,7 @@ public class UserInformation extends javax.swing.JDialog {
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 94, 105));
-        jLabel11.setText("Y tá phòng thuốc");
+        jLabel11.setText("Admin");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -217,7 +241,7 @@ public class UserInformation extends javax.swing.JDialog {
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 94, 105));
-        jLabel13.setText("lephilong2011@gmail.com");
+        jLabel13.setText("rasengan2458@gmail.com");
         jLabel13.setAlignmentY(5.0F);
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, -1, -1));
 
@@ -229,7 +253,7 @@ public class UserInformation extends javax.swing.JDialog {
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 94, 105));
-        jLabel15.setText("PMT001");
+        jLabel15.setText("001");
         jLabel15.setAlignmentY(5.0F);
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, -1, -1));
 
@@ -357,5 +381,7 @@ public class UserInformation extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }

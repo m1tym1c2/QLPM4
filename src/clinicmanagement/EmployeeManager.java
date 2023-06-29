@@ -202,7 +202,7 @@ public class EmployeeManager extends javax.swing.JFrame {
         Tentaikhoan.setBackground(new java.awt.Color(1, 63, 65));
         Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(1, 84, 43));
-        Tentaikhoan.setText("Trần Ngọc Tiến");
+        Tentaikhoan.setText("Minh Thư");
         jPanel1.add(Tentaikhoan, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 20, 190, 28));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/277027184_555937372561581_5654092174016176725_n.png"))); // NOI18N

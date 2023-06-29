@@ -3,9 +3,6 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1171, 700]"/>
-    </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -391,7 +388,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="2a" green="54" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="L&#xea; Phi Long&#xa;"/>
+                <Property name="text" type="java.lang.String" value="Minh Qu&#xe2;n"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Anhdaidien">

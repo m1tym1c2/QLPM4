@@ -62,9 +62,9 @@ public class ThayDoiThongTinThamSo extends javax.swing.JDialog {
         SoBenhNhanToiDa = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(590, 310));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -92,12 +92,23 @@ public class ThayDoiThongTinThamSo extends javax.swing.JDialog {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 174, -1));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 174, -1));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 84, 42));
         jLabel1.setText("Số lượng bệnh nhân tối đa:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 73, 264, -1));
+
+        jButton7.setBackground(new java.awt.Color(255, 204, 204));
+        jButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(0, 99, 28));
+        jButton7.setText("Quay lại");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 220, 174, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -133,7 +144,11 @@ public class ThayDoiThongTinThamSo extends javax.swing.JDialog {
            }
         this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
     }//GEN-LAST:event_jButton4ActionPerformed
-    */
+*/
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+    }//GEN-LAST:event_jButton7ActionPerformed
+    
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
     try {
         int tienKhamNew = Integer.parseInt(TienKham.getText());
@@ -163,7 +178,7 @@ public class ThayDoiThongTinThamSo extends javax.swing.JDialog {
     } catch (Exception e) {
         // Xử lý exception (nếu có)
     }
-}
+    }
 
     /**
      * @param args the command line arguments
@@ -211,6 +226,7 @@ public class ThayDoiThongTinThamSo extends javax.swing.JDialog {
     private javax.swing.JTextField SoBenhNhanToiDa;
     private javax.swing.JTextField TienKham;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

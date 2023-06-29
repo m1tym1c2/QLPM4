@@ -218,7 +218,7 @@ public class AddNewMedicine extends javax.swing.JFrame {
 
         Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(0, 84, 42));
-        Tentaikhoan.setText("Lê Phi Long\n");
+        Tentaikhoan.setText("Minh Quân");
         jPanel2.add(Tentaikhoan, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, -1, -1));
 
         Nutmuiten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/Screenshot 2022-04-26 103146.png"))); // NOI18N

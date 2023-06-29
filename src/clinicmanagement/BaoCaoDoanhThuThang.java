@@ -380,7 +380,7 @@ public class BaoCaoDoanhThuThang extends javax.swing.JFrame {
 
         Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(0, 84, 42));
-        Tentaikhoan.setText("Lê Phi Long\n");
+        Tentaikhoan.setText("Minh Quân");
 
         Anhdaidien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/image 6.png"))); // NOI18N
 
@@ -427,7 +427,7 @@ public class BaoCaoDoanhThuThang extends javax.swing.JFrame {
                 .addComponent(Tentaikhoan)
                 .addGap(18, 18, 18)
                 .addComponent(Nutmuiten)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

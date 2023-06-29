@@ -174,7 +174,6 @@ public class Home extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
         setForeground(java.awt.Color.white);
-        setMaximumSize(new java.awt.Dimension(822, 618));
         setMinimumSize(new java.awt.Dimension(822, 618));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -343,7 +342,7 @@ public class Home extends javax.swing.JFrame {
 
         Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(0, 84, 42));
-        Tentaikhoan.setText("Lê Phi Long\n");
+        Tentaikhoan.setText("Minh Quân");
 
         Nutmuiten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/Screenshot 2022-04-26 103146.png"))); // NOI18N
         Nutmuiten.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -358,7 +357,7 @@ public class Home extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(569, Short.MAX_VALUE)
+                .addContainerGap(571, Short.MAX_VALUE)
                 .addComponent(Anhdaidien)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Tentaikhoan)

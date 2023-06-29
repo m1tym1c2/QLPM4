@@ -247,7 +247,7 @@ public class KeThuoc extends javax.swing.JFrame {
         }
         catch (Exception e)
         {
-            JOptionPane.showMessageDialog(this, e.toString());
+            JOptionPane.showMessageDialog(this, "Số lượng không phù hợp");
         }
         
     }//GEN-LAST:event_jButton2ActionPerformed

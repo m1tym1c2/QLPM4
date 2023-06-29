@@ -77,14 +77,17 @@ public class BillList extends javax.swing.JFrame {
             month = "0" + month;
         }
 
-        String dd = year + "-" + month + "-" + day;
-
+        
+        String ddStart = year + "-01-01";
+        String ddEnd = year + "-" + month + "-" + day;
         try {
-            Date date = new SimpleDateFormat("yyyy-MM-dd").parse(dd);
-            jDateChooser1.setDate(date);
-            jDateChooser2.setDate(date);
-            jDateChooser1.setMaxSelectableDate(date);
-            jDateChooser2.setMaxSelectableDate(date);
+            Date start = new SimpleDateFormat("yyyy-MM-dd").parse(ddStart);
+            Date end = new SimpleDateFormat("yyyy-MM-dd").parse(ddEnd);
+            
+            jDateChooser1.setDate(start);
+            jDateChooser2.setDate(end);
+            jDateChooser1.setMaxSelectableDate(start);
+            jDateChooser2.setMaxSelectableDate(end);
             try {
                 DatabaseConnection databaseConnection = new DatabaseConnection();
                 connection = databaseConnection.getConnection(jLabel);
@@ -139,14 +142,18 @@ public class BillList extends javax.swing.JFrame {
         JTableHeader header = tableDark1.getTableHeader();
         header.setDefaultRenderer(new HeaderRenderer(tableDark1));
         jPanel1.setVisible(false);
-        String dd = year + "-" + month + "-" + day;
+        
+        String ddStart = year + "-01-01";
+        String ddEnd = year + "-" + month + "-" + day;
 
         try {
-            Date date = new SimpleDateFormat("yyyy-MM-dd").parse(dd);
-            jDateChooser1.setDate(date);
-            jDateChooser2.setDate(date);
-            jDateChooser1.setMaxSelectableDate(date);
-            jDateChooser2.setMaxSelectableDate(date);
+            Date start = new SimpleDateFormat("yyyy-MM-dd").parse(ddStart);
+            Date end = new SimpleDateFormat("yyyy-MM-dd").parse(ddEnd);
+            
+            jDateChooser1.setDate(start);
+            jDateChooser2.setDate(end);
+            jDateChooser1.setMaxSelectableDate(start);
+            jDateChooser2.setMaxSelectableDate(end);
             try {
                 DatabaseConnection databaseConnection = new DatabaseConnection();
                 connection = databaseConnection.getConnection(jLabel);
@@ -157,12 +164,12 @@ public class BillList extends javax.swing.JFrame {
                 String strDate1 = formatter.format(date1);
                 Date date2 = jDateChooser2.getDate();
                 String strDate2 = formatter.format(date2);
-
+                
                 ResultSet rs = statement.executeQuery("SELECT * FROM HOADON, PHIEUKHAMBENH, BENHNHAN "
                         + "WHERE HOADON.MaPhieuKhamBenh = PHIEUKHAMBENH.MaPhieuKhamBenh "
                         + "AND BENHNHAN.MaBenhNhan = PHIEUKHAMBENH.MaBenhNhan "
                         + "AND PHIEUKHAMBENH.NgayKham >= '" + strDate1 + "' AND PHIEUKHAMBENH.NgayKham <= '" + strDate2 + "'");
-
+                
                 DefaultTableModel model = (DefaultTableModel) tableDark1.getModel();
                 model.setRowCount(0);
                 int i = 0;
@@ -171,6 +178,7 @@ public class BillList extends javax.swing.JFrame {
                     String data[] = {Integer.toString(i), rs.getString("MaHoaDon"), rs.getString("TenBenhNhan"),
                         rs.getString("NgayKham"), vi.format(rs.getInt("TienKham")), vi.format(rs.getInt("TienThuoc")),
                         vi.format(rs.getInt("TienKham") + rs.getInt("TienThuoc"))};
+                    
                     DefaultTableModel tbModel = (DefaultTableModel) tableDark1.getModel();
                     tbModel.addRow(data);
                 }
@@ -437,6 +445,8 @@ public class BillList extends javax.swing.JFrame {
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
 
         jDateChooser1.setDateFormatString("dd/MM/yyyy");
+        jDateChooser1.setMaxSelectableDate(new java.util.Date(253370743314000L));
+        jDateChooser1.setMinSelectableDate(new java.util.Date(-62135791086000L));
         jDateChooser1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
                 jDateChooser1PropertyChange(evt);
@@ -563,7 +573,7 @@ public class BillList extends javax.swing.JFrame {
 
         Tentaikhoan.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Tentaikhoan.setForeground(new java.awt.Color(0, 84, 42));
-        Tentaikhoan.setText("Lê Phi Long\n");
+        Tentaikhoan.setText("Minh Quân");
         jPanel2.add(Tentaikhoan, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 20, -1, -1));
 
         Nutmuiten.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Anh/Screenshot 2022-04-26 103146.png"))); // NOI18N

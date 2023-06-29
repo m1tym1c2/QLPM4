@@ -422,8 +422,7 @@ public class ReportMedicineUsage extends javax.swing.JFrame {
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, -1, -1));
 
         Thang.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Thang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
-        Thang.setSelectedIndex(4);
+        Thang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
         Thang.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 ThangItemStateChanged(evt);
@@ -437,7 +436,7 @@ public class ReportMedicineUsage extends javax.swing.JFrame {
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, -1, -1));
 
         Nam.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Nam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2022" }));
+        Nam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2023" }));
         Nam.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 NamItemStateChanged(evt);
